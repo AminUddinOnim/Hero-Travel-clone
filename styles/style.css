@@ -46,24 +46,24 @@ body {
     color: rgb(255, 84, 0);
 }
 
-ul {
+.navbar ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-ul li {
+.navbar ul li {
     list-style: none;
     margin-left: 25px;
 }
 
-ul li a {
+.navbar ul li a {
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 400;
 }
 
-ul li:last-child {
+.navbar ul li:last-child {
     margin-left: 0px;
 }
 
@@ -144,6 +144,65 @@ button {
 
 /* banner section style end */
 
+/* popular tours section start */
+
+.popular-tours {
+    margin-top: 5rem;
+    display: flex;
+    gap: 0px 4rem;
+}
+
+.tours-text-container,
+.popular-img {
+    flex-basis: 50%;
+}
+
+.tours-title {
+    color: rgb(19, 19, 24);
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 50px;
+}
+
+.tours-details, .tours-description {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 1rem 0px;
+}
+
+.tours-text-container ul {
+    padding-left: 40px;
+}
+
+.tours-text-container ul li {
+    color: rgba(19, 19, 24, 0.7);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 16px;
+}
+
+.tours-text-container button {
+    width: auto;
+}
+
+.popular-img {
+    /* height: 400px; */
+}
+
+.popular-tours .popular-img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* popular tours section end */
 
 
 
@@ -188,18 +247,43 @@ button {
         margin-top: 1rem;
     }
 
+    .popular-tours {
+        flex-direction: column;
+    }
+
+    .popular-img {
+        margin-top: 2rem;
+        height: 100%;
+    }
+
+    .tours-title {
+        font-size: 1.5rem;
+    }
+
+    .tours-details,
+    .tours-description {
+        font-size: 0.75rem;
+        margin: .6rem 0px;
+    }
+
+    .tours-text-container ul li {
+        font-size: 0.75rem;
+        margin-bottom: 0px;
+    }
+
+
 }
 
 /* tablet responsive area */
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
     .logo h3 {
-        font-size: 1.25rem;
+        font-size: 1rem;
         font-weight: 800;
     }
 
-    ul li a {
-        font-size: 0.8rem;
+    .navbar ul li a {
+        font-size: 0.875rem;
     }
 
     .banner-title {
@@ -214,6 +298,21 @@ button {
 
     .banner-content {
         padding: 0 10px;
+    }
+
+    .tours-title {
+        font-size: 1.5rem;
+    }
+
+    .tours-details,
+    .tours-description {
+        font-size: 0.75rem;
+        margin: .6rem 0px;
+    }
+
+    .tours-text-container ul li {
+        font-size: 0.75rem;
+        margin-bottom: 0px;
     }
 
 }
