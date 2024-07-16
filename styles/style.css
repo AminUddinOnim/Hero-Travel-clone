@@ -1,0 +1,222 @@
+/*Google font link */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+}
+
+/* shared styles start */
+.container {
+    width: 90%;
+    margin: 3rem auto;
+}
+/* shared styles end */
+
+
+/* navbar section style start */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.logo h3 {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.span {
+    color: rgb(255, 84, 0);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+ul li:last-child {
+    margin-left: 0px;
+}
+
+.fa-bars {
+    font-size: 1.25rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* navbar section style end */
+
+/* banner section style start */
+
+.banner {
+    height: 500px;
+    margin-top: 2.5rem;
+    border-radius: 1rem;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.8), rgba(19, 19, 24, 0) 100%), url("../Images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 0px;
+}
+
+.banner-title {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.banner-description {
+    color: rgba(255, 255, 255, 0.801);
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 24px;
+    width: 550px;
+    margin: 20px 0;
+}
+
+.banner-inputs {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 1rem 2rem;
+    filter: drop-shadow(40px);
+    display: flex;
+    gap: 0px 1rem;
+    border-radius: 5px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: .875rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    display: flex;
+    gap: 0 10px;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 84, 0);
+    color: white;
+}
+
+/* banner section style end */
+
+
+
+
+
+
+/* responsive area */
+
+@media screen and (max-width: 576px) {
+    ul li a {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+
+    .logo img {
+        width: 30px;
+        margin-right: 10px;
+    }
+    .logo h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    .banner-title {
+        font-size: 1.7rem;
+    }
+    .banner-description {
+        font-size: 0.6rem;
+        width: auto;
+        line-height: 14px;
+        padding: 0 15px;
+    }
+
+    .banner-inputs {
+        flex-direction: column;
+    }
+
+    input,
+    select,
+    button {
+        margin-top: 1rem;
+    }
+
+}
+
+/* tablet responsive area */
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .logo h3 {
+        font-size: 1.25rem;
+        font-weight: 800;
+    }
+
+    ul li a {
+        font-size: 0.8rem;
+    }
+
+    .banner-title {
+        font-size: 2.2rem;
+    }
+
+    .banner-description {
+        font-size: 0.75rem;
+        width: 500px;
+        line-height: 14px;
+    }
+
+    .banner-content {
+        padding: 0 10px;
+    }
+
+}
+
+
+
